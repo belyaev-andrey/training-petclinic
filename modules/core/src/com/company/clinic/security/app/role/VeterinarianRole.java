@@ -33,8 +33,7 @@ public class VeterinarianRole extends AnnotatedRoleDefinition {
     }
 
     @EntityAttributeAccess(entityClass = Visit.class,
-            modify = {"consumables", "hoursSpent"},
-            view = {"date", "description", "pet", "veterinarian"})
+            modify = {"consumables", "hoursSpent", "date", "description", "pet", "veterinarian"})
     @EntityAttributeAccess(entityClass = Consumable.class,
             view = {"price", "title"})
     @Override
