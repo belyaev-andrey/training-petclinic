@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://caption"
+        messagesPack="com.company.clinic.web.screens.bproc.treatment">
+    <layout>
+        <form>
+            <column width="400px">
+                <lookupField id="pet" caption="msg://petField.caption" editable="false"/>
+                <textArea id="description" caption="msg://descriptionField.caption" editable="false"/>
+                <textArea id="comment" caption="msg://commentField.caption" editable="true"/>
+            </column>
+        </form>
+        <buttonsPanel>
+            <button id="completeBtn" caption="msg://complete" icon="THUMBS_UP"/>
+            <button id="needInfo" caption="msg://needInfo" icon="THUMBS_DOWN"/>
+        </buttonsPanel>
+    </layout>
+</window>

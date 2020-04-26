@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<queries xmlns="http://schemas.haulmont.com/cuba/rest-queries.xsd">
+    <query name="recent-visits" entity="clinic_Visit" view="_local">
+        <jpql>
+            select v from clinic_Visit v order by v.createTs DESC
+        </jpql>
+    </query>  
+</queries>
